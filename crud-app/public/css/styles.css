@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+ul.list{
+    gap: 40px;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color :white
+}
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+}
+a:hover{
+    color: white;
+}
+@media (max-width: 769px){
+    header.container{
+        flex-direction: column;
+    }
+    .logo{
+        text-align: center;
+    }
+    ul.list li{
+        font-size: 14px;
+    }
+    ul.list{
+        margin: 0 auto;
+    }
+}
+@media (max-width: 462px){
+    
+    ul.list {
+        gap:20px;
+    }
+    ul.list li{
+        font-size: 12px;
+    }
+    .logo{
+        font-size: 16px;}
+}
+.entries input{
+    width: 40px;
+    height:30px;
+    text-align: center;
+}
+.entries p{
+    margin: 4px 0;
+}
+.table-header h3{
+    color: white;
+    font-size: 15px;
+}
+.table-header .id{
+    flex: 1;
+    margin-left: 50px;
+}
+.table-header .id i{
+    font-size: 10px;
+}
+@media (max-width: 520px){
+    .table-header .id h3{
+        font-size: 13px ;
+    }
+}
+@media (max-width: 995px){
+    .table-header .id {
+        margin: 0 10px;
+    }
+}
+@media (max-width: 770px){
+    .table-header .id {
+        margin: 0;
+    }
+}
+.box, .box-2{
+    border: 1px solid #ccc;
+    width: 450px;
+    margin: 0 auto;
+}
+.box .add{
+    background-color: rgb(60, 60, 206);
+    color: white;
+    text-align: start;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.box-2 .add{
+    background-color: green;
+    color: white;
+    text-align: start;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.box-2 .edit-user-btn{
+    background-color: green;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px 0;
+
+}
+.field input{
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.field label {
+    margin: 0 16px;
+    font-size: 15px;
+}
+.box .add-user-btn{
+    background-color: rgb(60, 60, 206);
+}
+.add-user-btn, .edit-user-btn{
+    color: white;
+    padding: 10px 20px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.choose-img{
+    width: 400px;
+    margin: 0 auto;
+    text-align: start;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 6px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.user{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+.user img{
+    width: 40px;
+}
+.user p{
+    text-align: center;
+    font-weight: 450;
+    color: #333;
+}
+.user-actions{
+    text-align: center;
+}
+.user img{
+    margin: 0 auto;
+}
+.user-actions {
+    display: flex;
+    justify-content: space-evenly;
+}
+.user-actions .fa-edit{
+    cursor: pointer;
+    color: green;
+}
+.user-actions .fa-trash-alt{
+    cursor: pointer;
+    color: red;
+}
+.field-container:nth-child(odd){
+    background-color: #cfcccc;
+}
+.field-container:nth-child(even){
+    background-color: #e7e3e3;
+}
+.box,.box-2{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    transition: 0.3s;
+}
+.fa-x{
+    transform: translate(199px, -37px);
+    cursor: pointer;
+}
+input{
+    outline: none;
+}

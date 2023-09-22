@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Crud App</title>
+</head>
+<body>
+    <nav class="bg-dark ">
+        <header class="container d-flex justify-content-between p-4">
+            <a class="logo" href="#">CRUD APP</a>
+            <ul class="list">
+                <li>
+                    <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                    <a class="home" href="#">Home</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-plus" style="color: #ffffff;"></i>
+                    <a class="Adding" href="#">Add User</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
+                    <a class="about" href="#">About</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-address-book" style="color: #ffffff;"></i>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </head>
+    </nav>
+    <div class="sec-bar container d-flex justify-content-between">
+        <div class="entries d-flex py-5">
+            <p class="px-2">Show</p>
+            <input type="number" value="10" class="filter">
+            <p class="px-2">entries</p>
+        </div>
+        <div class="search d-flex py-5">
+            <label class="px-2" for="searchbar">search</label>
+            <input type="text" id="searchbar">
+        </div>
+    </div>
+    <div class="table container">
+    <div class="table-header d-flex bg-dark">
+        <div class="id d-flex">
+            <h3>Id</h3>
+            <i class="fa-solid fa-arrows-up-down" style="color: #ffffff;"></i>
+        </div>
+        <div class="id d-flex">
+            <h3>Image</h3>
+            <i class="fa-solid fa-arrows-up-down" style="color: #ffffff;"></i>
+        </div>
+        <div class="id d-flex">
+            <h3>Name</h3>
+            <i class="fa-solid fa-arrows-up-down" style="color: #ffffff;"></i>
+        </div>
+        <div class="id d-flex">
+            <h3>E-Mail
+            </h3>
+            <i class="fa-solid fa-arrows-up-down" style="color: #ffffff;"></i>
+        </div>
+        <div class="id d-flex">
+            <h3>Phone</h3>
+            <i class="fa-solid fa-arrows-up-down" style="color: #ffffff;"></i>
+        </div>
+        <div class="id d-flex">
+            <h3>Action</h3>
+            <i class="fa-solid fa-arrows-up-down" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <div class="users">
+        
+    </div>
+  </div>
+  <div class="box text-center my-4">
+    <div class="add py-2">Add New User</div>
+    <i class="fa-solid fa-x closeAdd" style="color: #ffffff;"></i>
+
+    <div class="fields py-3">
+        <div class="field">
+            <label for="name">Name</label>
+            <input type="text" name="" id="name" placeholder="Enter name ...">
+        </div>
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="text" name="" id="email" placeholder="Enter Email ...">
+        </div>
+        <div class="field">
+            <label for="phone">Phone</label>
+            <input type="text" name="" id="phone" placeholder="Enter Phone ...">
+        </div>
+        <div class="choose-img">
+            <div class="image">
+                <input class="one" type="file" id="imageInput" accept="image/*" name="image">
+            </div>
+        </div>
+        <button class="add-user-btn">Add New User</button>
+    </div>
+</div>
+<div class="box-2 text-center my-4">
+    <div class="add py-2">Add New User</div>
+    <i class="fa-solid fa-x closeEdit"  style="color: #ffffff;"></i>
+    <div class="fields py-3">
+        <div class="field">
+            <label for="name">Name</label>
+            <input type="text" name="" id="name2" placeholder="Enter name ...">
+        </div>
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="text" name="" id="email2" placeholder="Enter Email ...">
+        </div>
+        <div class="field">
+            <label for="phone">Phone</label>
+            <input type="text" name="" id="phone2" placeholder="Enter Phone ...">
+        </div>
+        <div class="choose-img">
+            <div class="image">
+                <input class="one" type="file" id="imageInput2" accept="image/*" name="image">
+            </div>
+        </div>
+        <button class="edit-user-btn">Add New User</button>
+    </div>
+</div>
+  <script src="js/vanilla.js" defer></script>
+</body>
+</html>
